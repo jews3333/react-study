@@ -1,11 +1,11 @@
 {
-  "name": "webpack-react",
+  "name": "react-stuty",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot",
-    "build": "webpack"
+    "start": "cross-env NODE_PATH=src webpack-dev-server --hot",
+    "build": "cross-env NODE_PATH=src webpack"
   },
   "dependencies": {
     "@babel/core": "^7.7.5",
@@ -20,11 +20,13 @@
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
     "webpack-dev-server": "^3.9.0"
   },
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }

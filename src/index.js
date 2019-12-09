@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.scss';
+
+import { BrowserRouter } from 'react-router-dom';
+
+import Router from './routes/Router';
+
+import './base.scss';
 
 const Root = () => {
     return (
-        <div id="root">
-            <h1 className="title">gkdlt</h1>
-        </div>
+        <BrowserRouter>
+            <Router/>
+        </BrowserRouter>
     );
 }
 
