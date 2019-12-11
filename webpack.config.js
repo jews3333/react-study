@@ -7,14 +7,15 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle[hash].js',
-        path: path.resolve(__dirname + '/build')
+        path: path.resolve(__dirname + '/build'),
+        publicPath: '/'
     },
     mode: 'none',
     devServer: {
         host: 'localhost',
         port: process.env.PORT || 3000,
         open: true,
-        //historyApiFallback: true
+        historyApiFallback: true
     },
     module: {
         rules: [

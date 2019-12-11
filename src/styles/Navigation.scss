@@ -1,0 +1,14 @@
+#navigation {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    & > a {
+        background:#2B3044;
+        color:#f6f8ff;
+        padding:12px 20px 12px 12px;
+        border-radius:24px;
+        line-height:1;
+    }
+}

@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter } from 'react-router-dom';
-
-import Router from './routes/Router';
+import Routes from './routes/Routes';
 
 import './base.scss';
 
 const Root = () => {
     return (
-        <BrowserRouter>
-            <Router/>
-        </BrowserRouter>
+        <div id="app">
+            <Routes/>
+        </div>
     );
 }
 
