@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 
 import Routes from './routes/Routes';
 
-import './base.scss';
+import './App.scss';
 
 const Root = () => {
     return (
         <div id="app">
             <Routes/>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
+            <div className="snow"></div>
         </div>
     );
 }
